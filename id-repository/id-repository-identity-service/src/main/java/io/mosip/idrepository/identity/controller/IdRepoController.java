@@ -266,7 +266,7 @@ public class IdRepoController {
 	}
 
 	@PreAuthorize("hasAnyRole(@authorizedRoles.getPostidvidid())")
-	@PostMapping(path = "/idvid/", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
+	@PostMapping(path = "/idvid", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
 	@Operation(summary = "retrieveIdentityById", description = "retrieveIdentityById", tags = { "id-repo-controller" })
 	@ApiResponses(value = {
 			@ApiResponse(responseCode = "200", description = "OK"),
